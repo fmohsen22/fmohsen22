@@ -17,6 +17,8 @@ public class Test {
 
         List<DataObject> fileObject = ReadTheFile.createObjectFromCsv();
 
+        //test the branch
+
         System.out.println("\nchecking if ANGELia is inside of the file:");
         assertEquals("Angelia MacGou",
                 fileObject.stream().filter(o->o.getFullName().equals("Angelia MacGoun")).findAny().get().getFullName());
